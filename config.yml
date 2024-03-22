@@ -1,0 +1,49 @@
+INTERNET_ACCESS: true # Establecer en true para habilitar acceso a internet
+MAX_SEARCH_RESULTS: 4 # Establecer el máximo de resultados de búsqueda para acceso a internet, NO ESTABLECER MUY ALTO
+
+ALLOW_DM: true # Establecer en true para permitir mensajes directos
+SMART_MENTION: true # Establecer en true para habilitar la función de mención inteligente
+
+GPT_MODEL: gpt-3.5-turbo-0613 # Modelo utilizado para completar el chat
+
+MAX_HISTORY: 8 # Establecer el máximo de historial de mensajes
+
+PRESENCES_CHANGE_DELAY: 8 # Tenga en cuenta que el Retardo de Cambio de Presencias se mide en segundos. No es recomendable establecerlo demasiado bajo, ya que podría resultar en que su bot sea limitado por la velocidad en Discord
+AI_NSFW_CONTENT_FILTER: true # Habilitar el detector de contenido NSFW de IA para detectar solicitudes NSFW en el comando Imagine
+
+LANGUAGE: es # Especificar el código de idioma (consulte la carpeta 'lang' para códigos válidos)
+
+INSTRUCCIONES: glados # Especifique la instrucción de comando a utilizar (consulte la carpeta 'instructions' para instrucciones válidas)
+# Para agregar instrucciones personalizadas, cree un archivo .txt como 'custom.txt' en la carpeta `instructions` y establezca INSTRUCCIONES como 'custom'
+
+Discord: https://discord.gg/7f9AckatS7
+Github: https://github.com/PinkLittleKitty/Glados-Gpt-Bot
+
+TRIGGER:
+  - glados
+# Define los desencadenantes a los que el bot siempre debe responder cuando esté en línea
+
+DISABLE_PRESENCE: false 
+PRESENCIAS:
+  - Portal 3
+  - actualmente en {guild_count} cámara de pruebas
+  - Con los sujetos de prueba
+# Lista de presencias diferentes para ser utilizadas
+
+OCR_MODEL_URLS:
+  - "https://api-inference.huggingface.co/models/microsoft/trocr-base-printed"
+  - "https://api-inference.huggingface.co/models/nlpconnect/vit-gpt2-image-captioning"
+# Lista de URL para modelos de OCR
+
+BLACKLIST_WORDS:
+  - naked
+  - loli
+  - hentai
+  - explicit
+  - pornography
+  - adult
+  - XXX
+  - sex
+  - erotic
+  
+# Palabras en lista negra para el comando /Imagine, esto se desactiva si habilita AI_NSFW_CONTENT_FILTER
