@@ -13,7 +13,7 @@ AI_NSFW_CONTENT_FILTER: true # Habilitar el detector de contenido NSFW de IA par
 
 LANGUAGE: es # Especificar el código de idioma (consulte la carpeta 'lang' para códigos válidos)
 
-INSTRUCCIONES: glados # Especifique la instrucción de comando a utilizar (consulte la carpeta 'instructions' para instrucciones válidas)
+INSTRUCTIONS: glados # Especifique la instrucción de comando a utilizar (consulte la carpeta 'instructions' para instrucciones válidas)
 # Para agregar instrucciones personalizadas, cree un archivo .txt como 'custom.txt' en la carpeta `instructions` y establezca INSTRUCCIONES como 'custom'
 
 Discord: https://discord.gg/7f9AckatS7
@@ -24,7 +24,7 @@ TRIGGER:
 # Define los desencadenantes a los que el bot siempre debe responder cuando esté en línea
 
 DISABLE_PRESENCE: false 
-PRESENCIAS:
+PRESENCES:
   - Portal 3
   - actualmente en {guild_count} cámara de pruebas
   - Con los sujetos de prueba
